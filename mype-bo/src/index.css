@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'daisyui';
+
+body {
+    background-color: #000d19; 
+}
+
+.header {
+    background-color: #000d19;
+}
+
+/* COLOR FONDO CAJAS */
+.box-color {
+    background-color: #192A34;
+    border-radius: 1rem;
+}
+
+/* COLOR TEXTO */
+.text-color {
+    color: #D7EAF4;
+}
+
+/* IMAGEN BACKGROUND */
+.sectionWithBackground {
+    background-image: url('./images/Group-7.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: right; 
+  }
+
+  /* ESTILOS LISTA */
+  .contenedor-lista {
+    list-style-type: none; 
+    padding-left: 1.5rem;   
+  }
+  
+  .contenedor-lista li::before {
+    content: "\2022";      
+    color: #D7EAF4;           
+    display: inline-block;
+    width: 1em;           
+    margin-left: -1.5rem;  
+  }
+  
+  .contenedor-lista li {
+    margin-bottom: 0.5rem; 
+  }
+
+  /* ESTILOS BOTONES */
+  .boton {
+    background-color: #192A34;
+    color: #D7EAF4;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+  }
+  .boton:hover {
+    background-color: #335566;
+  }
+
+  /* TITULOS */
+  .titulo {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .titulo::before {
+    position: absolute;
+    content: "";
+    width: 25%;
+    top: 50%;
+    left: 10%;
+    height: 0.2rem;
+    background-color: #D7EAF4;
+  }
+  .titulo::after {
+    position: absolute;
+    content: "";
+    width: 25%;
+    top: 50%;
+    right: 10%;
+    height: 0.2rem;
+    background-color: #D7EAF4;
+  }
+
+  .vertical-text {
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    white-space: nowrap; 
+    color: #D7EAF4;
+    text-align: center;
+  }
+  
+  
