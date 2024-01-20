@@ -68,7 +68,7 @@ body {
   .titulo::before {
     position: absolute;
     content: "";
-    width: 25%;
+    width: 20%;
     top: 50%;
     left: 10%;
     height: 0.2rem;
@@ -77,19 +77,42 @@ body {
   .titulo::after {
     position: absolute;
     content: "";
-    width: 25%;
+    width: 20%;
     top: 50%;
     right: 10%;
     height: 0.2rem;
     background-color: #D7EAF4;
   }
 
-  .vertical-text {
-    transform-origin: left bottom;
-    transform: rotate(-90deg);
-    white-space: nowrap; 
-    color: #D7EAF4;
-    text-align: center;
+  /* MARGENES Y ALTURAS */
+  .margen-izquierda {
+    margin-left: 25rem;
   }
-  
-  
+
+  .h-100 {
+    height: 35rem;
+  }
+
+  .top-29 {
+    top: 29rem;
+  }
+
+  /* PROYECTOS */
+  .proyectos {
+    display: flex;
+    gap: 2rem;
+    width: auto;
+    height: 38rem;
+  }
+  .proyecto1, .proyecto2, .proyecto3 {
+    width: 0rem;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .1s ease;
+  }
+  .proyecto1:hover, .proyecto2:hover, .proyecto3:hover {
+    width: 30rem;
+    opacity: 1;
+    filter: contrast(120%);
+  }
