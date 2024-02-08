@@ -116,3 +116,13 @@ body {
     opacity: 1;
     filter: contrast(120%);
   }
+
+  .color-menu {
+    background-color: #000d19;
+  }
+  .hover:text-custom-color:hover {
+    color: #fcc717;
+  }
+  .tamano-text-menu {
+    font-size: 2.5rem;
+  }
